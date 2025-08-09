@@ -3,8 +3,8 @@ title: Installation
 description: How to install Sikandar Dev Shadcn components in your project.
 ---
 
-import CliCommandCode from "@/components/markdown/cli-command-code/cli-command-code.astro";
-import { PUBLIC_SITE_SHORT_TITLE, PUBLIC_SITE_URL } from "astro:env/client";
+import CliCommandCode from "@/components/markdown/cli-command-code/cli-command-code.astro"
+import { PUBLIC_SITE_SHORT_TITLE, PUBLIC_SITE_URL } from "astro:env/client"
 
 It doesn't matter what framework or package manager you are using. Installing {PUBLIC_SITE_SHORT_TITLE} Shadcn components is as simple as running the `shadcn add` command followed by the URL to the component you want to install. This URL will always be formatted as <code>{PUBLIC_SITE_URL}/r/\<component-name\>.json</code>.
 
@@ -13,6 +13,6 @@ The entire install process is handled by the `shadcn` CLI tool and works identic
 ## Example
 
 <CliCommandCode
-    action="run"
-    command={`shadcn@latest add ${PUBLIC_SITE_URL}/r/password-input.json`}
+  action="run"
+  command={`shadcn@latest add ${PUBLIC_SITE_URL}/r/password-input.json`}
 />
