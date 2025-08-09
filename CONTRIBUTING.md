@@ -8,8 +8,8 @@ Please take a moment to review this document before submitting your first pull r
 
 This repository is an Astro Starlight project.
 
--   We use `pnpm` for development.
--   We use `prettier` for code formatting.
+- We use `pnpm` for development.
+- We use `prettier` for code formatting.
 
 ## Structure
 
