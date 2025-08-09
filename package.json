@@ -1,0 +1,28 @@
+{
+    "name": "sikandar-dev-shadcn-registry",
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "astro": "astro",
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "astro": "^5.12.8"
+    },
+    "prettier": {
+        "singleQuote": false,
+        "semi": true,
+        "trailingComma": "all",
+        "tabWidth": 4,
+        "printWidth": 80,
+        "arrowParens": "avoid",
+        "bracketSameLine": false,
+        "endOfLine": "auto"
+    },
+    "devDependencies": {
+        "prettier": "^3.6.2"
+    }
+}
