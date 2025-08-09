@@ -33,6 +33,10 @@ export default defineConfig({
                 context: "client",
                 access: "public",
             }),
+            PUBLIC_GITHUB_REPO_NAME: envField.string({
+                context: "client",
+                access: "public",
+            }),
             PUBLIC_GITHUB_REPO_URL: envField.string({
                 context: "client",
                 access: "public",
@@ -59,7 +63,7 @@ export default defineConfig({
                 replacesTitle: true,
             },
             editLink: {
-                baseUrl: process.env.PUBLIC_GITHUB_REPO_URL,
+                baseUrl: `${process.env.PUBLIC_GITHUB_REPO_URL}/tree/main`,
             },
             social: [
                 {
@@ -89,6 +93,24 @@ export default defineConfig({
                         {
                             label: "Installation",
                             slug: "getting-started/installation",
+                        },
+                    ],
+                },
+                {
+                    label: "Contributing",
+                    items: [
+                        { label: "Introduction", slug: "contributing" },
+                        {
+                            label: "Component Request",
+                            slug: "contributing/component-request",
+                        },
+                        {
+                            label: "Feature Request",
+                            slug: "contributing/feature-request",
+                        },
+                        {
+                            label: "Contributing Code",
+                            slug: "contributing/contributing-code",
                         },
                     ],
                 },
