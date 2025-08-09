@@ -131,6 +131,20 @@
 }
 
 @layer theme {
+  .expressive-code > figure.frame {
+    @apply shadow-none;
+
+    --code-background: var(--code);
+  }
+
+  .expressive-code > figure.frame > pre {
+    @apply rounded-md border-none;
+  }
+
+  .expressive-code > figure.frame.has-title > pre {
+    @apply rounded-t-none;
+  }
+
   .sl-anchor-link:not(:where(.not-content *)) {
     @apply hidden;
   }
