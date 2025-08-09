@@ -51,6 +51,7 @@ export default defineConfig({
         starlight({
             title: process.env.PUBLIC_SITE_TITLE!,
             description: process.env.PUBLIC_SITE_DESCRIPTION!,
+            customCss: ["./src/styles/global.css"],
             logo: {
                 dark: "./public/favicon-dark.png",
                 light: "./public/favicon.png",
@@ -74,6 +75,21 @@ export default defineConfig({
                     icon: "x.com",
                     label: "X.com",
                     href: process.env.PUBLIC_TWITTER_URL!,
+                },
+            ],
+            sidebar: [
+                {
+                    label: "Getting Started",
+                    items: [
+                        {
+                            label: "Introduction",
+                            slug: "getting-started/introduction",
+                        },
+                        {
+                            label: "Installation",
+                            slug: "getting-started/installation",
+                        },
+                    ],
                 },
             ],
         }),
