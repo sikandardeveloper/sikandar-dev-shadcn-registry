@@ -4,6 +4,7 @@ import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig, envField } from "astro/config";
 import dotenv from "dotenv";
+import starlightThemeBlack from "starlight-theme-black";
 
 // Load Environment Variables
 dotenv.config({ path: ".env.local" });
@@ -91,6 +92,26 @@ export default defineConfig({
                         },
                     ],
                 },
+            ],
+            plugins: [
+                starlightThemeBlack({
+                    navLinks: [
+                        {
+                            label: "Docs",
+                            link: "/getting-started/installation",
+                        },
+                        {
+                            label: "Components",
+                            link: "/components",
+                        },
+                        {
+                            label: "Contributing",
+                            link: "/contributing",
+                        },
+                    ],
+                    footerText:
+                        "Built by [Sikandar Dev](https://www.github.com/sikandardeveloper) for use with [Shadcn](https://ui.shadcn.com).",
+                }),
             ],
         }),
     ],
