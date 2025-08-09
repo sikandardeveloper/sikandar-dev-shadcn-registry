@@ -60,8 +60,8 @@ export default defineConfig({
       customCss: ["./src/styles/global.css"],
       favicon: "/favicon.ico",
       logo: {
-        dark: "./public/favicon-dark.png",
-        light: "./public/favicon.png",
+        light: "./src/assets/logo/favicon.png",
+        dark: "./src/assets/logo/favicon-dark.png",
         replacesTitle: true,
       },
       editLink: {
